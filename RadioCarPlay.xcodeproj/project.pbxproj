@@ -13,6 +13,7 @@
 		65D48EF228D20F7400E14028 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D48EF128D20F7400E14028 /* Preview Assets.xcassets */; };
 		65D48EF428D20F7400E14028 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D48EF328D20F7400E14028 /* Persistence.swift */; };
 		65D48EF728D20F7400E14028 /* RadioCarPlay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65D48EF528D20F7400E14028 /* RadioCarPlay.xcdatamodeld */; };
+		65D48F0028D210DD00E14028 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D48EFF28D210DD00E14028 /* CarPlaySceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,10 @@
 		65D48EF128D20F7400E14028 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65D48EF328D20F7400E14028 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		65D48EF628D20F7400E14028 /* RadioCarPlay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RadioCarPlay.xcdatamodel; sourceTree = "<group>"; };
+		65D48EFD28D20F7D00E14028 /* RadioCarPlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RadioCarPlay.entitlements; sourceTree = "<group>"; };
+		65D48EFE28D2103C00E14028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		65D48EFF28D210DD00E14028 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
+		65D48F0128D2530B00E14028 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +44,7 @@
 		65D48EDE28D20F7300E14028 = {
 			isa = PBXGroup;
 			children = (
+				65D48F0128D2530B00E14028 /* README.md */,
 				65D48EE928D20F7300E14028 /* RadioCarPlay */,
 				65D48EE828D20F7300E14028 /* Products */,
 			);
@@ -55,12 +61,15 @@
 		65D48EE928D20F7300E14028 /* RadioCarPlay */ = {
 			isa = PBXGroup;
 			children = (
+				65D48EFE28D2103C00E14028 /* Info.plist */,
+				65D48EFD28D20F7D00E14028 /* RadioCarPlay.entitlements */,
 				65D48EEA28D20F7300E14028 /* RadioCarPlayApp.swift */,
 				65D48EEC28D20F7300E14028 /* ContentView.swift */,
 				65D48EEE28D20F7400E14028 /* Assets.xcassets */,
 				65D48EF328D20F7400E14028 /* Persistence.swift */,
 				65D48EF528D20F7400E14028 /* RadioCarPlay.xcdatamodeld */,
 				65D48EF028D20F7400E14028 /* Preview Content */,
+				65D48EFF28D210DD00E14028 /* CarPlaySceneDelegate.swift */,
 			);
 			path = RadioCarPlay;
 			sourceTree = "<group>";
@@ -147,6 +156,7 @@
 				65D48EF428D20F7400E14028 /* Persistence.swift in Sources */,
 				65D48EED28D20F7300E14028 /* ContentView.swift in Sources */,
 				65D48EEB28D20F7300E14028 /* RadioCarPlayApp.swift in Sources */,
+				65D48F0028D210DD00E14028 /* CarPlaySceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,17 +282,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RadioCarPlay/Preview Content\"";
 				DEVELOPMENT_TEAM = BT2HY6GA35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = RadioCarPlay/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,17 +313,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RadioCarPlay/Preview Content\"";
 				DEVELOPMENT_TEAM = BT2HY6GA35;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = RadioCarPlay/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

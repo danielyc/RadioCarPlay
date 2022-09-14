@@ -14,8 +14,10 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let newItem = Radio(context: viewContext)
+            newItem.title = "Test title"
+            newItem.url = URL(string: "")
+            newItem.subTitle = "Test subtitle"
         }
         do {
             try viewContext.save()
